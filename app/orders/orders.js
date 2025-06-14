@@ -1,3 +1,25 @@
+export const columnKeys = [
+    "date",
+    "orders",
+    "customers",
+    "returnRate",
+    "newCustomers",
+    "conversionRate",
+    "avgOrderValue",
+    "revenue",
+];
+
+export const columnLabels = [
+    "Order ID",
+    "Customer",
+    "Amount",
+    "Status",
+    "Date",
+    "Payment",
+    "Delivery",
+];
+
+
 export const orders = [
     {
         "orderId": "ORD123456",

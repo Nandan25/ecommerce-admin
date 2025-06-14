@@ -8,7 +8,7 @@ import {
 } from "../../components/ui/Card";
 import { useState } from "react";
 import { ScrollArea } from "../../components/ui/scroll-area";
-import { orders } from "./orders";
+import { orders, columnKeys } from "./orders";
 import { Pagination } from "../../components/ui/pagination";
 
 const getStatusColor = (status: string) => {
@@ -47,13 +47,11 @@ export default function OrdersPage() {
           <table className="w-full text-sm text-left border-separate border-spacing-y-2">
             <thead className="text-gray-700 font-semibold">
               <tr>
-                <th className="px-4 py-2">Order ID</th>
-                <th className="px-4 py-2">Customer</th>
-                <th className="px-4 py-2">Amount</th>
-                <th className="px-4 py-2">Status</th>
-                <th className="px-4 py-2">Date</th>
-                <th className="px-4 py-2">Payment</th>
-                <th className="px-4 py-2">Delivery</th>
+                {columnKeys.map((key, index) => (
+                  <th key={index} className="px-4 py-2">
+                    {key}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
