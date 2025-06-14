@@ -1,10 +1,4 @@
-import { DashboardPage } from "./dashboard/page";
-import { AnalyticsPage } from "./analytics/page";
+import { redirect } from "next/navigation";
 export default function Home() {
-  return (
-    <>
-      <DashboardPage />
-      <AnalyticsPage />
-    </>
-  );
+  redirect("/dashboard");
 }
