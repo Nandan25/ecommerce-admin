@@ -11,8 +11,8 @@ import {
 } from "../../components/ui/Card";
 import { Badge } from "../../components/ui/badge";
 import { ScrollArea } from "../../components/ui/scroll-area";
-import { Button } from "../../components/ui/Button";
-import { Eye, Pencil, Trash } from "lucide-react";
+// import { Button } from "../../components/ui/Button";
+// import { Eye, Pencil, Trash } from "lucide-react";
 import { products, columnLabels } from "./products";
 import { Pagination } from "../../components/ui/pagination";
 

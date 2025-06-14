@@ -1,6 +1,3 @@
-const columnKeys = [
-
-];
 
 export const columnLabels = [
     "Product ID",

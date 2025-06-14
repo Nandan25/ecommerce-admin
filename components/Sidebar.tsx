@@ -12,9 +12,6 @@ import {
   Boxes,
   Tag,
   Warehouse,
-  MessageSquare,
-  FileBarChart,
-  Headset,
   LucideIcon,
 } from "lucide-react";
 
@@ -32,9 +29,6 @@ const links: NavLink[] = [
   { label: "Products", icon: Boxes, path: "/products" },
   { label: "Categories", icon: Tag, path: "/categories" },
   { label: "Inventory", icon: Warehouse, path: "/inventory" },
-  { label: "Reviews", icon: MessageSquare, path: "/reviews" },
-  { label: "Reports", icon: FileBarChart, path: "/reports" },
-  { label: "Support", icon: Headset, path: "/support" },
 ];
 
 export default function Sidebar() {

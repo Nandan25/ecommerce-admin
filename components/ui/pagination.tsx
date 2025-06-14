@@ -1,10 +1,16 @@
 import React from "react";
 
+type PaginationProps = {
+  handlePageChange: (page: number) => void;
+  currentPage: number;
+  totalPages: number;
+};
+
 export const Pagination = ({
   handlePageChange,
   currentPage,
   totalPages,
-}: any) => {
+}: PaginationProps) => {
   return (
     <div className="flex justify-center mt-4 gap-2">
       <button
